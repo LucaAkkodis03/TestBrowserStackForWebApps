@@ -1,0 +1,13 @@
+{
+  "name": "test-browserstack2",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "BROWSERSTACK_CONFIG_PATH=browserstack.yml npx browserstack-node-sdk playwright test"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.56.1"
+  },
+  "devDependencies": {
+    "browserstack-node-sdk": "^1.35.0"
+  }
+}

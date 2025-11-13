@@ -1,0 +1,44 @@
+#Le credenziali sono salvate nelle variabili d'ambiente
+projectName: BrowserStack Samples
+buildName: browserstack build
+buildIdentifier: "#48"
+platforms:
+  # 💻 Desktop browsers
+  - os: OS X
+    osVersion: Big Sur
+    browserName: Chrome
+    browserVersion: latest
+  - os: Windows
+    osVersion: "10"
+    browserName: Edge
+    browserVersion: latest
+  - os: Windows
+    osVersion: "11"
+    browserName: Chrome
+    browserVersion: latest
+
+  # 🤖 Android devices
+  - deviceName: Samsung Galaxy S24 Ultra
+    osVersion: "14.0"
+    browserName: chrome
+  - deviceName: Google Pixel 8
+    osVersion: "14.0"
+    browserName: chrome
+  - deviceName: Samsung Galaxy S22 Ultra
+    osVersion: "12.0"
+    browserName: chrome
+parallelsPerPlatform: 1
+browserstackLocal: true
+debug: false
+networkLogs: false
+consoleLogs: errors
+testReporting: true
+testObservability: true
+testContextOptions:
+  skipSessionStatus: false
+  skipSessionName: false
+logDir: /home/ak75691/Desktop/TestBrowserStack2/log
+browserStackLocalOptions:
+  localIdentifier: 5_Nov_1615_AK75691-PC_oo61
+  skipBinaryInitialisation: false
+proxySettings: {}
